@@ -29,7 +29,7 @@ $host     = 'localhost';
 $port     = '5432';
 $dbname   = 'bus_ticketing_db';
 $dbuser   = 'postgres';
-$dbpass   = 'Tusharborn772005@'; // <-- set this to your local PostgreSQL password
+$dbpass = getenv('DB_PASSWORD'); // <-- set this to your local PostgreSQL password
 
 try {
     $pdo = new PDO(
